@@ -1,0 +1,55 @@
+section.conservation
+	background:
+		image: url(../img/conservation-bg2.png)
+		position: center 30%
+		size: cover
+		repeat: no-repeat
+	color: white
+
+	.bolivar
+		margin-left: 20px
+		height: 400px
+		width: 50%
+		position: relative
+		background:
+			image: url(../img/bolivar2.png)
+			position: center
+			repeat: no-repeat
+			size: contain
+
+	.home-cta
+		color: #595a68
+
+	.col-1
+		height: 400px
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+	.home-lead
+		margin-left: 50px
+
+	@media (max-width: 640px)
+		.home-lead
+				margin-left: 0px
+
+		.bolivar
+			width: calc(100% - 20px)
+			margin-left: 10px
+			height: 300px
+			
+		.col-1
+			width: calc(100% - 20px)
+			height: auto
+			&:first-child
+				height: 70vw
+			&:last-child
+				padding: 30px 0 0 0
+		p
+			width: 100%
+			text-align: center
+
+	@media (max-width: 450px)
+		.bolivar
+			height: 200px

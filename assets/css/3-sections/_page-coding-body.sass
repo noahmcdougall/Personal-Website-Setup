@@ -1,0 +1,60 @@
+section.page-coding-body
+	display: flex
+	flex-direction: column
+	align-items: center
+	background-color: #f4f4f6
+
+	.col-full
+		justify-content: space-around
+		width: auto
+		display: flex
+		flex-direction: row
+		height: auto
+		text-align: justify
+
+	.col-half
+		width: 40%
+		min-width: 280px
+		padding-bottom: 100px
+
+	.order-first
+		order: 0
+
+	.placeholderpic
+		height: 100%
+		background:
+			image: url(../img/olive.jpg)
+			position: center
+			size: contain
+			repeat: no-repeat
+
+	.videocontent
+		align-self: center
+
+	.flex-video
+		box-shadow: 0px 4px 40px 3px rgba(0,0,0,0.5)
+		transform: scale(1.0)
+
+	hr
+		height: 1px
+		background-color: #ccc
+
+	h2
+		color: #585858
+		font-weight: 400
+		text-align: center
+
+	@media (max-width: 640px)
+		.col-full
+			flex-direction: column
+		.col-half
+			width: auto
+			margin-left: 20px
+			margin-right: 20px
+			padding-bottom: 20px
+
+		.order-first
+			order: -1
+
+		.placeholderpic
+			height: 300px

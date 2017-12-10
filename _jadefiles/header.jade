@@ -1,0 +1,24 @@
+mixin nav-content()
+	ul
+		li: a(href="#about") About
+		li: a(href="#geoscience") Geoscience
+		li: a(href="#gis") Cartography
+		li: a(href="#coding") Coding
+		li: a(href="#caving") Caving
+		li: a(href="#conservation") Conservation
+		li: a(href="#contact") Contact
+
+
+.mobile-nav
+	+nav-content()
+
+header
+	.header-position
+		a(href="/").h1.logo Noah McDougall
+
+		nav.site-nav
+			+nav-content()
+
+		a(href="/assets/pdf/NoahMcDougall_resume.pdf").resume-link Resume
+
+		.mobile-nav-toggle: span

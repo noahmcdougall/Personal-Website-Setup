@@ -1,0 +1,31 @@
+section.gis
+	background:
+		// Image from https://commons.wikimedia.org/wiki/File:BigData_2267x1146_white.png
+		image: url(../img/gis-bg5.png)
+		position: center
+		size: cover
+	color: black
+
+	@media (max-width: 830px)
+		background:
+			position: calc(50% + -50px)
+
+	.home-cta
+		color: #595a68
+
+
+	.col-1
+		height: 400px
+		position: relative
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+	.noheight
+		height: 0px
+
+	@media (max-width: 640px)
+		display: flex
+		flex-direction: rows
+		justify-content: flex-end
+		text-align: right
